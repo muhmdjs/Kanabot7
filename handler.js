@@ -1630,7 +1630,7 @@ export async function participantsUpdate({ id, participants, action }) {
       if (chat.welcome && !chat?.isBanned) {
         const groupMetadata = await m.conn.groupMetadata(id) || (conn.chats[id] || {}).metadata;
         for (const user of participants) {
-          let pp = 'https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/avatar_contact.png';
+          let pp = './Menu.png';
           try {
             pp = await m.conn.profilePictureUrl(user, 'image');
           } catch (e) {
@@ -1640,13 +1640,13 @@ export async function participantsUpdate({ id, participants, action }) {
             const userPrefix = antiArab.some((prefix) => user.startsWith(prefix));
             const botTt2 = groupMetadata.participants.find((u) => m.conn.decodeJid(u.id) == m.conn.user.jid) || {};
             const isBotAdminNn = botTt2?.admin === 'admin' || false;
-            text = (action === 'add' ? (chat.sWelcome || tradutor.texto1 || conn.welcome || 'Welcome, @user!').replace('@subject', await m.conn.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽*') :
-              (chat.sBye || tradutor.texto2 || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0]);
+            text = (action === 'add' ? (chat.sWelcome || tradutor.texto1 || conn.welcome || 'منور @user!').replace('@subject', await m.conn.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽*') :
+              (chat.sBye || tradutor.texto2 || conn.bye || 'سلام هتوحشنا @user!')).replace('@user', '@' + user.split('@')[0]);
             if (userPrefix && chat.antiArab && botTt.restrict && isBotAdminNn && action === 'add') {
               const responseb = await m.conn.groupParticipantsUpdate(id, [user], 'remove');
               if (responseb[0].status === '404') return;
               const fkontak2 = { 'key': { 'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo' }, 'message': { 'contactMessage': { 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` } }, 'participant': '0@s.whatsapp.net' };
-              await m.conn.sendMessage(id, { text: `*[❗] @${user.split('@')[0]} ᴇɴ ᴇsᴛᴇ ɢʀᴜᴘᴏ ɴᴏ sᴇ ᴘᴇʀᴍɪᴛᴇɴ ɴᴜᴍᴇʀᴏs ᴀʀᴀʙᴇs ᴏ ʀᴀʀᴏs, ᴘᴏʀ ʟᴏ ϙᴜᴇ sᴇ ᴛᴇ sᴀᴄᴀʀᴀ ᴅᴇʟ ɢʀᴜᴘᴏ*`, mentions: [user] }, { quoted: fkontak2 });
+              await m.conn.sendMessage(id, { text: `*[❗] @${user.split('@')[0]} في هذه المجموعة، لا يُسمح بإستخدام الأرقام العربية أو الرموز الغريبة، لذا قد يتم طردك من المجموعة*`, mentions: [user] }, { quoted: fkontak2 });
               return;
             }
             await m.conn.sendFile(id, apii.data, 'pp.jpg', text, null, false, { mentions: [user] });
@@ -1757,16 +1757,16 @@ global.dfail = (type, m, conn) => {
   const tradutor = _translate.handler.dfail
 
   const msg = {
-    rowner: tradutor.texto1,
-    owner: tradutor.texto2,
-    mods: tradutor.texto3,
-    premium: tradutor.texto4,
-    group: tradutor.texto5,
-    private: tradutor.texto6,
-    admin: tradutor.texto7,
-    botAdmin: tradutor.texto8,
-    unreg: tradutor.texto9,
-    restrict: tradutor.texto10,
+   rowner: '*هذا الأمر يمكن استخدامه فقط بواسطة المطور*',
+   owner: '*هذا الأمر يمكن استخدامه فقط بواسطة المطور*',
+   mods: '*هذا الأمر يمكن استخدامه فقط بواسطة المطور والمشرفين*',
+   premium: '*هذا الأمر يمكن استخدامه فقط من قبل المستخدمين المميزين والمطور*',
+   group: '*هذا الأمر يمكن استخدامه فقط في المجموعات*',
+   private: '*هذا الأمر يمكن استخدامه فقط في الرسائل الخاصة*',
+   admin: '*هذا الأمر يمكن استخدامه فقط من قبل المشرفين*',
+   botAdmin: '*لا يمكن استخدام هذا الأمر إلا إذا كان البوت مشرفًا في هذه المجموعة*',
+   unreg: '*عذرًا، لا يمكن استخدام هذا الأمر*',
+   restrict: '*هذا الأمر غير متاح*',
   }[type];
   const aa = { quoted: m, userJid: conn.user.jid };
   const prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: tradutor.texto11[0], body: tradutor.texto11[1], thumbnail: imagen1, sourceUrl: tradutor.texto11[2] } } } }, aa);
