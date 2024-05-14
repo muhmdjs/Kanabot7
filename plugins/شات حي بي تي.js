@@ -21,6 +21,14 @@ let handler = async (msg, { text, conn, usedPrefix, command }) => {
             imageUrl = await uploadImage(media);
         }
 
+        // إعداد بيانات الطلب
+        const requestBody = {
+            prompt: query,
+            max_tokens: 150
+        };
+
+        console.log('Request Body:', requestBody); // إضافة تسجيل للطلب
+
         // استدعاء Chat GPT API
         const response = await fetch(apiurl, {
             method: 'POST',
@@ -28,10 +36,7 @@ let handler = async (msg, { text, conn, usedPrefix, command }) => {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${apiKey}`
             },
-            body: JSON.stringify({
-                prompt: query,
-                max_tokens: 150
-            })
+            body: JSON.stringify(requestBody)
         });
 
         // التحقق من استجابة API
@@ -42,7 +47,9 @@ let handler = async (msg, { text, conn, usedPrefix, command }) => {
         }
 
         const data = await response.json();
-        const reply = data.choices[0].text.trim();
+        console.log('API Response:', data); // إضافة تسجيل للاستجابة
+
+        const reply = data.choices && data.choices[0] ? data.choices[0].text.trim() : '❌ لم يتم العثور على رد مناسب.';
 
         msg.reply(reply);
 
@@ -51,6 +58,7 @@ let handler = async (msg, { text, conn, usedPrefix, command }) => {
         throw 'حدث خطأ في الاتصال بـ Chat GPT API';
     }
 };
+
 
 handler.help = ['chatgpt'];
 handler.tags = ['AI'];
