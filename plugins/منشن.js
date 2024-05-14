@@ -4,11 +4,11 @@ global.dfail('admin', m, conn)
 throw false
 }//غير ڤينوم و حط اسم بوتك
 let pesan = args.join` `
-let oi = `*~الرساله:* ${pesan}`
-let teks = `*منشن ⌬ جماعي* \n\n ${oi}\n\n*⌬┇الجروب :⇣*\n`
+let oi = `*👾~الرساله:* ${pesan}`
+let teks = `*منش👾 🌸 جماعي* \n\n ${oi}\n\n*🌿┇الجروب :⇣*\n`
 for (let mem of participants) {
-teks += `*⌬↫* @${mem.id.split('@')[0]}\n`}
-teks += `*𝓡𝓲𝔂𝓾𝓷𝓑𝓸𝓽*\n\n*╾━━━━━━━━━━━━━━━━╼*`
+teks += `*👾↫* @${mem.id.split('@')[0]}\n`}
+teks += `*k A N A BOT*\n\n*▌│█║▌║▌║║▌║▌║▌║█*`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 }
 handler.help = ['tagall <mesaje>','invocar <mesaje>']

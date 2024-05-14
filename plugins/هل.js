@@ -8,7 +8,7 @@ let a = ps.getRandom()
 let x = `${pickRandom(['احــتـمـال قـلـيـل' ,'نــعم بـالـتـأكـيد', 'لا أعـتـقـد', 'مــستـحـيــل'])}`
 let l = Math.floor(Math.random() * x.length);
 let top = `*هــل ${text}*
-    
+
 *الــأجــابـه :* ${x}`.trim()
 conn.sendFile (m.reply (top, null, { mentions: [a]}))}
 handler.help = handler.command = ['هل']
