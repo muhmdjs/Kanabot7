@@ -1,16 +1,13 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-  if (!text) throw `اذا كنت تواجه مشكلة ما في البوت أو أحد الأوامر لا تعمل معك فاكتب الامر متبوع بالمشكلة التي تعاني منها في البوت وسيتم تلبية طلبكم من طرف صاحب البوت `
-  if (text.length < 5) throw `يجب ان تكون الرسالة فيها اكثر من كلمتنين `
-  if (text.length > 1000) throw `الحد الادنى هو 1000 حرف اختر ما تريد قوله !`
-  let teks = `*${command.toUpperCase()}!*\nمن : *@${m.sender.split`@`[0]}*\nالرساله : ${text}\n`
-  conn.reply(global.nomorown + '@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
-      contextInfo: {
-          mentionedJid: [m.sender]
-      }
-  })
-  m.reply(`.....يتم إرسال الرسالة إلى صاحب البوت،\n بمجرد ان يقرأ صاحب البوت هذه الرسالة سيتم الرد عليكم لا تقلقو*`)
+if (!text) throw `*[❗تحذير❗] ادخل مشكلتك و بلاغك*\n\n*مثال:*\n*${usedPrefix + command} مرحباً سيدي ميجو${usedPrefix}كيف اخبارك*`
+if (text.length < 10) throw `*[❗تحذير❗] البلاغ لا يقل عن عشرة احرف*`
+if (text.length > 1000) throw `*[❗تحذير❗] البلاغ لا يزيد عن الف حرف*`
+let teks = `*❒═════[إبلاغ مهم]═════❒*\n*┬*\n*├❧ الرقم:* wa.me/${m.sender.split`@`[0]}\n*┴*\n*┬*\n*├❧ البلاغ:* ${text}\n*┴*`
+conn.reply('201003691617@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, { contextInfo: { mentionedJid: [m.sender] }})
+conn.reply('@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, { contextInfo: { mentionedJid: [m.sender] }})
+m.reply(`*[ ✔️ ] تم إبلاغ المطور و انشاء الله يكون ف خدمتك في أسرع وقت 🐦🫶🏻❤️*`)
 }
-handler.help = ['report']
-handler.tags = ['infobot']
-handler.command = /^(ابلاغ)$/i
+handler.help = ['reporte', 'request'].map(v => v + ' <teks>')
+handler.tags = ['info']
+handler.command = /^(report|بلاغ|بلغ|ابلاغ|bug|report-owner|reportes)$/i
 export default handler

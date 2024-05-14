@@ -1,17 +1,12 @@
-const handler = async (m, { conn, command }) => {
-  if (!m.quoted) throw 'قم بالاشارة للرسالة التي تريد مسحها';
-  try {
-    let bilek = m.message.extendedTextMessage.contextInfo.participant;
-    let banh = m.message.extendedTextMessage.contextInfo.stanzaId;
-    return conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: banh, participant: bilek } });
-  } catch {
-    return conn.sendMessage(m.chat, { delete: m.quoted.vM.key });
-  }
-};
 
-handler.help = ['delete'];
-handler.tags = ['owner'];
-handler.command = /^(حذف)$/i;
-handler.admin = true;
+let handler = async (m, { conn, text }) => {
+  let room = Object.values(conn.game).find(room => room.id.startsWith('tictactoe') && [room.game.playerX, room.game.playerO].includes(m.sender))
+if (room == undefined) return conn.reply(m.chat,`فين الرساله الي عايز تمسحها!`, m)
+delete conn.game[room.id]
+await conn.reply(m.chat, `تم الحذف`, m)
+}
+handler.help = ['delttt']
+handler.tags = ['game']
+handler.command = ['حذففف', 'delttt', 'delxo']
 
-export default handler;
+export default handler
