@@ -1,218 +1,128 @@
 [
     {
-        "question": "¿Qué le dice un pingüino a otro pingüino?",
-        "response": "Te quiero como a ningüino"
+        "question": "س1 – ما الأصول الثلاثة التي يجب على الإنسان معرفتها؟",
+        "response": " معرفة العبد ربه ودينه ونبيه محمد "
     },
     {
-        "question": "¿Qué le dice un ciego a otro ciego?",
-        "response": "Después nos vemos"
+        "question": "ما هي السُّورة التي تعدُّ أمُّ الكتاب؟",
+        "response": "الفاتحه"
     },
     {
-        "question": "¿En qué se parece un alfiler a un policía?",
-        "response": "En que los dos prenden"
+        "question": "ماذا يجب ان نفعل مع المرتد الذي داخل بلاد المسلمين?",
+        "response": "نستتيبه ثلاث ايام وان لم يتب نقتله"
     },
     {
-        "question": "¿Qué se congela cuando se calienta?",
-        "response": "La computadora"
+        "question": "ما السوره التي لا تبدأ بالسمله",
+        "response": "التوبة"
     },
     {
-        "question": "¿Qué fruta tiene muchos ojos, pero no puede ver?",
-        "response": "La piña"
+        "question": "هل يجوز بناء كنيسة في بلاد المسلمين؟",
+        "response": "لا يجوز"
     },
     {
-        "question": "¿En qué idioma se comunican las tortugas?",
-        "response": "En tortugués"
+        "question": "ما حكم الاشاعره؟",
+        "response": "كفار"
     },
     {
-        "question": "¿Cómo llama un policía sevillano a su pistola?",
-        "response": "Mi arma"
+        "question": "من هو الصحابي الملقب بسيف الله المسلول",
+        "response": "خالد بن الوليد"
     },
     {
-        "question": "¿Qué es todo para uno y nada para lo demás?",
-        "response": "La mente"
+        "question": "ما حكم من ينكر علو الله تعالى بالسماء",
+        "response": "كافر"
     },
     {
-        "question": "¿Cuál es el colmo de una aspiradora?",
-        "response": "Ser alérgica al polvo"
+        "question": "ما حكم الاغاني؟",
+        "response": "حرام"
     },
     {
-        "question": "¿Qué es aquello que si nombras, desaparece?",
-        "response": "El silencio"
+        "question": "ما حكم من سب رسول الله حتى وان تاب؟",
+        "response": "يقتل"
     },
     {
-        "question": "¿Qué necesitamos para escribir durmiendo?",
-        "response": "Estar despiertos"
+        "question": "هل غير المسلمين يدخلون الجنة؟",
+        "response": "لا"
     },
     {
-        "question": "¿Qué objeto puede tener cara sin poseer cuerpo?",
-        "response": "Una moneda"
+        "question": "ما حكم من يقول ان القرآن مخلوق؟",
+        "response": "كافر"
     },
     {
-        "question": "Alimenta la casa, Gabinete con hielo",
-        "response": "La nevera"
+        "question": "ما حكم الزاني المحصن(المتزوج)؟",
+        "response": "الرجم"
     },
     {
-        "question": "¿Qué tienen las mujeres en medio de las piernas?",
-        "response": "Las rodillas"
+        "question": "ما حد الزنا",
+        "response": "يجلد ثمانين جلده"
     },
     {
-        "question": "Entra duro y seco y sale blandito y mojado ¿Qué es?",
-        "response": "Un chicle"
+        "question": "ما حكم سب الدهر؟",
+        "response": "حرام"
     },
     {
-        "question": "Estoy en todo y estoy en nada ¿qué soy?",
-        "response": "La letra d"
+        "question": "ما حكم ترك الصلاة",
+        "response": "كفر"
     },
     {
-        "question": "Continuas en rojo, pero te paras en verde. ¿Qué soy?",
-        "response": "Una sandía"
+        "question": "ما حكم الطاغوت؟",
+        "response": "كافر"
     },
     {
-        "question": "¿Qué es negro cuando lo compras, rojo cuando lo usas, y gris cuando lo tiras?",
-        "response": "El carbón"
+        "question": "من هو خليل الله",
+        "response": "ابراهيم"
     },
     {
-        "question": "¿Qué hay delante de ti siempre pero que no se puede ver?",
-        "response": "El futuro"
+        "question": "من هو النبي الذي اسمه مكتوب على العرش",
+        "response": "محمد"
     },
     {
-        "question": "¿Qué mes tiene 28 días?",
-        "response": "Todos"
+        "question": "من هو روح الله؟",
+        "response": "عيسى"
     },
     {
-        "question": "¿Cómo puede estar alguien sin dormir diez días y no tener sueño?",
-        "response": "Durmiendo por las noches"
+        "question": "ما اسم الجبل الذي استوت عليه سفينه نوح",
+        "response": "جبل الجودي"
     },
     {
-        "question": "¿De qué llenarías un barril para que pese lo menos posible?",
-        "response": "De agujeros"
+        "question": "من هو الصحابي الملقب ب الفاروق",
+        "response": "عمر بن الخطاب"
     },
     {
-        "question": "Si durante una carrera adelantas a quien va segundo, ¿en qué posición estás?",
-        "response": "Segundo"
+        "question": "ما هو الناقض الرابع من نواقض الاسلام",
+        "response": "من اعتقد ان هدى النبي اكمل من هديه"
     },
     {
-        "question": "¿En qué lugar el jueves va antes que el miércoles?",
-        "response": "En el diccionario"
+        "question": "ما حكم الاستهزاء بالملائكه",
+        "response": "كفر"
     },
     {
-        "question": "¿Qué sube y baja pero se queda siempre en el mismo sitio?",
-        "response": "Las escaleras"
+        "question": "بأي سوره موجوده هذه الآيه؟:﴿وَإِنۡ عَاقَبۡتُمۡ فَعَاقِبُوا۟ بِمِثۡلِ مَا عُوقِبۡتُم بِهِۦۖ}",
+        "response": "التوبة"
     },
     {
-        "question": "¿Cómo llaman a un ascensor en China?",
-        "response": "Apretando el botón"
+        "question": "ما حكم من لا يكفر الكافر",
+        "response": "كافر"
     },
     {
-        "question": "¿Qué es lo primero que hace un elefante al salir el sol?",
-        "response": "Sombra"
+        "question": "من هي اول زوجه للرسول",
+        "response": "خديجة بنت خويلد"
     },
     {
-        "question": "¿Por qué un Tiranosaurus Rex no puede aplaudir?",
-        "response": "Porque se extinguió"
+        "question": "ما اول سوره نزلت",
+        "response": "سورة العلق"
     },
     {
-        "question": "¿Qué animal siempre está lleno?",
-        "response": "La ballena"
+        "question": "هل الله يخلق صفاته",
+        "response": "لا"
     },
     {
-        "question": "¿Qué es lo primero que todos hacemos al despertar?",
-        "response": "Abrir los ojos"
+        "question": "من اول من اسلم بالرجال",
+        "response": "ابي بكر الصديق"
     },
     {
-        "question": "¿Cuál es el número que si le quitas la mitad, vale 0?",
-        "response": "El ocho"
+        "question": "من هو مؤلف كتاب التوحيد",
+        "response": "محمد بن عبد الوهاب"
     },
     {
-        "question": "¿Qué se necesita para encender una vela?",
-        "response": "Que esté apagada"
-    },
-    {
-        "question": "¿Cuál es el país donde termina todo?",
-        "response": "Finlandia"
-    },
-    {
-        "question": "La respuesta a esta pregunta es #######",
-        "response": "#######"
-    },
-    {
-        "question": "Cuál es el final de todo",
-        "response": "La letra o"
-    },
-    {
-        "question": "¿Dónde se encuentra una pared con otra pared?",
-        "response": "En la esquina"
-    },
-    {
-        "question": "¿Qué tiene muchas palabras, pero nunca habla?",
-        "response": "Un libro"
-    },
-    {
-        "question": "¿Qué cosa te pertenece, pero los demás usan más que tú?",
-        "response": "Tu nombre"
-    },
-    {
-        "question": "¿En qué momento una persona se convierte en fruta?",
-        "response": "Cuando espera"
-    },
-    {
-        "question": "Los padres de José tienen tres hijos: Luis, Raúl y…, ¿cómo se llama el tercero?",
-        "response": "José"
-    },
-    {
-        "question": "¿Qué palabra del diccionario se escribe incorrectamente?",
-        "response": "Incorrectamente"
-    },
-    {
-        "question": "Húmedo por dentro, con pelos por fuera. Comienza por la C. ¿De qué se trata?",
-        "response": "Un coco"
-    },
-    {
-        "question": "David y Fabián están jugando al ajedrez. Llevan 5 partidas, pero ambos han ganado 3. ¿Cómo es posible?",
-        "response": "Porque juegan con más personas"
-    },
-    {
-        "question": "¿Cuántos 9 hay entre el 1 y el 100?",
-        "response": "20"
-    },
-    {
-        "question": "Son dos abanicos que están todo el día sin parar, pero cuando te duermas se paran y quietos se quedarán",
-        "response": "Las pestañas"
-    },
-    {
-        "question": "Oro parece, plata no es y el que no lo adivine un tonto es",
-        "response": "Un platano"
-    },
-    {
-        "question": "Círculo bien redondo al que si le pegas, das un brinco del susto",
-        "response": "Un tambor"
-    },
-    {
-        "question": "Un caballo blanco entró en el Mar Negro. ¿Cómo salió?",
-        "response": "Salió mojado"
-    },
-    {
-        "question": "Si un tren eléctrico va de Norte a Sur, ¿Hacia qué lado echará el humo?",
-        "response": "Es eléctrico, no echa humo"
-    },
-    {
-       "question": "Tiene 4 letras, empieza por C y termina por O y esta en la parte trasera",
-        "response": "El codo"
-    },
-    {
-       "question": "Se estrella un avión y mueren todos, justo en la frontera entre España y Portugal ¿A que Hospital tienen que llevar a los supervivientes? ",
-        "response": "No hay supervivientes"
-    },
-    {
-       "question": "Este banco está ocupado por un padre y por un hijo, el padre se llama Juan y el hijo ya te lo he dicho",
-        "response": "Esteban"
-    },
-    {
-       "question": "Algunos meses tienen 31 días, otros solo 30.¿Cuantos tienen 28 días?",
-        "response": "Todos"
-    },
-    {
-       "question": "No lo puedes ver, pero no puedes vivir sin él. ¿Qué es?",
-       "response": "El aire"
 }
 ]
