@@ -7,22 +7,22 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 
-global.botnumber = ""
+global.botnumber = "*『🔥┇kana-𝙱𝙾𝚃』*"
+global.confirmCode = ""
 
-global.owner = [
-  ['201127495892', 'Rav', true],
+global.owner = [['201003691617', 'ابو عبدالله', true],
 ];
 
-global.suittag = [''];
-global.prems = [''];
+global.suittag = ['201003691617'];
+global.prems = ['201003691617'];
 
-global.packname = 'صل على النبي';
-global.author = 'صل على النبي';
-global.wm = '𝑅𝒶𝓋';
-global.titulowm = '𝑅𝒶𝓋';
-global.titulowm2 = `𝑅𝒶𝓋`
-global.igfg = '𝑅𝒶𝓋';
-global.wait = '*⌛Loading...*';
+global.packname = '☾︎ KANABOT-𝙈𝘿 ☽︎';
+global.author = '✩kana-𝙱𝙾𝚃☆';
+global.wm = '✯KANABOT-𝐌𝐃✯';
+global.titulowm = '☾︎ KANABOT-𝙈𝘿 ☽︎';
+global.titulowm2 = `☾︎ KANABOT-𝙈𝘿 ☽︎`
+global.igfg = '☾︎ KANABOT-𝙈𝘿 ☽︎';
+global.wait = '*[ ⏳ ] انتظر جاي التحميل تابع صاحب البوت*...\n\n*https://www.instagram.com/m0hamed.78?igsh=enB0eG95eDh5d2Z1*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
@@ -30,31 +30,27 @@ global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png');
 global.imagen4 = fs.readFileSync('./Menu.png');
 global.imagen5 = fs.readFileSync('./src/+18.jpg');
 global.imagen6 = fs.readFileSync('./Menu3.png');
-global.imagen7 = fs.readFileSync('./src/menu_pt.png');
-global.imagen8 = fs.readFileSync('./src/menu_fr.png')
-global.imagen9 = fs.readFileSync('./src/menu_en.png')
-global.imagen10 = fs.readFileSync('./src/menu_ru.png')
 
 global.mods = [];
 
 //* *******Tiempo***************
 global.d = new Date(new Date + 3600000);
-global.locale = 'es';
+global.locale = 'ar';
 global.dia = d.toLocaleDateString(locale, {weekday: 'long'});
-global.fecha = d.toLocaleDateString('es', {day: 'numeric', month: 'numeric', year: 'numeric'});
-global.mes = d.toLocaleDateString('es', {month: 'long'});
-global.año = d.toLocaleDateString('es', {year: 'numeric'});
-global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
+global.fecha = d.toLocaleDateString('ar', {day: 'numeric', month: 'numeric', year: 'numeric'});
+global.mes = d.toLocaleDateString('ar', {month: 'long'});
+global.año = d.toLocaleDateString('ar', {year: 'numeric'});
+global.tiempo = d.toLocaleString('ar-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\𝑅𝒶𝓋`;
-global.gt = '𝑅𝒶𝓋';
-global.mysticbot = '𝑅𝒶𝓋';
-global.md = 'https://instagram.com/mohamednasr754';
-global.mysticbot = 'https://instagram.com/mohamednasr754';
-global.waitt = '*⏳LOADING...*';
-global.waittt = '*⏳LOADING...*';
-global.waitttt = '*⏳LOADING...*';
-global.nomorown = '201127495892';
+global.wm2 = `${dia} ${fecha}\n☾︎ KANABOT-𝙈𝘿 ☽︎`;
+global.gt = '☾︎ KANABOT-𝙈𝘿 ☽︎';
+global.mysticbot = '☾︎ KANABOT-𝙈𝘿 ☽︎';
+global.md = 'https://www.instagram.com/m0hamed.78?igsh=enB0eG95eDh5d2Z1';
+global.mysticbot = 'https://www.instagram.com/m0hamed.78?igsh=enB0eG95eDh5d2Z1';
+global.waitt = '*[ ⏳ ] انتظر جاي التحميل تابع صاحب البوت*...\n\n*https://www.instagram.com/m0hamed.78?igsh=enB0eG95eDh5d2Z1*';
+global.waittt = '*[ ⏳ ] انتظر جاي التحميل تابع صاحب البوت*...\n\n*https://www.instagram.com/m0hamed.78?igsh=enB0eG95eDh5d2Z1*';
+global.waitttt = '*[ ⏳ ] انتظر جاي التحميل تابع صاحب البوت*...\n\n*https://www.instagram.com/m0hamed.78?igsh=enB0eG95eDh5d2Z1*';
+global.nomorown = '201003691617';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
@@ -69,8 +65,8 @@ global.htki = '*⭑•̩̩͙⊱•••• ☪*';
 global.htka = '*☪ ••••̩̩͙⊰•⭑*';
 global.comienzo = '• • ◕◕════';
 global.fin = '════◕◕ • •';
-global.botdate = `*[ 📅 ] Fecha:*  ${moment.tz('America/Mexico_City').format('DD/MM/YY')}`;
-global.bottime = `*[ ⏳ ] Hora:* ${moment.tz('America/Mexico_City').format('HH:mm:ss')}`;
+global.botdate = `*[ 📅 ] التاريخ:*  ${moment.tz('Egypt/cairo_city').format('DD/MM/YY')}`;
+global.bottime = `*[ ⏳ ] الوقت:* ${moment.tz('Egypt/cairo_city').format('HH:mm:ss')}`;
 global.fgif = {key: {participant: '0@s.whatsapp.net'}, message: {'videoMessage': {'title': wm, 'h': `Hmm`, 'seconds': '999999999', 'gifPlayback': 'true', 'caption': bottime, 'jpegThumbnail': fs.readFileSync('./Menu.png')}}};
 global.multiplier = 99;
 global.flaaa = [
