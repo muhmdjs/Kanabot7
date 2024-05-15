@@ -1,4 +1,4 @@
-   import { createHash } from 'crypto'
+import { createHash } from 'crypto'
 import PhoneNumber from 'awesome-phonenumber'
 import { canLevelUp, xpRange } from '../lib/levelling.js'
 import fetch from 'node-fetch'
@@ -58,6 +58,7 @@ _> *▫️⬇️✯ ━━الـتـنزيـل━━✯⬇️_
 handler.help = ['main']
 handler.tags = ['group']
 handler.command = /^(اوامر-التنزيل|تنزيل|تحميل|التنزيل|التحميل|اوامر-التحميل)$/i
+
 export default handler
 function clockString(ms) {
     let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
@@ -81,4 +82,4 @@ function clockString(ms) {
         res = "مساء الخير 🌙"
       }
       return res
-}
+    }
