@@ -112,7 +112,6 @@ let str = `
 handler.help = ['main']
 handler.tags = ['group']
 handler.command = /^(ترفية|الترفية|الترفيه|الالعاب|العاب|ترفيه)$/i
-
 export default handler
 function clockString(ms) {
     let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
