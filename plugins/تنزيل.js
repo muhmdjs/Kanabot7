@@ -58,7 +58,6 @@ _> *▫️⬇️✯ ━━الـتـنزيـل━━✯⬇️_
 handler.help = ['main']
 handler.tags = ['group']
 handler.command = /^(اوامر-التنزيل|تنزيل|تحميل|التنزيل|التحميل|اوامر-التحميل)$/i
-
 export default handler
 function clockString(ms) {
     let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
@@ -82,5 +81,4 @@ function clockString(ms) {
         res = "مساء الخير 🌙"
       }
       return res
-    }
-
+}
