@@ -72,7 +72,7 @@ let str = `
 }
 handler.help = ['main']
 handler.tags = ['group']
-handler.command = /^(help|الاوامر|menu|أوامر|menu|اوامر)$/i
+handler.command = /^(help|الاوامر|جروب|جروب-اوامر|قروب|اوامر-الجروب)$/i
 
 export default handler
 function clockString(ms) {
