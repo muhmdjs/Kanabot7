@@ -1,5 +1,3 @@
-ها هو الكود بعد تصحيح الأخطاء:
-
    import { createHash } from 'crypto'
 import PhoneNumber from 'awesome-phonenumber'
 import { canLevelUp, xpRange } from '../lib/levelling.js'
@@ -35,27 +33,8 @@ let more = String.fromCharCode(8206)
 let readMore = more.repeat(850) 
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `
-*▫️📆تاريخ:* ${date}
-*▫️🕛وقت نشط:* ${uptime}
-*▫️⚡المستخدمين:* ${rtotalreg}
-*▫️🎖️ مستوى* ${level}
-*▫️🧰 خبرتك ${exp}*
-*▫️⚓ رتبتك ${role}*
-
-*▫️💎الماس:* ${limit}
-*▫️👾عملات:* ${money}
-*▫️🪙الرموز:* ${joincount}
-*▫️🎟️بريم:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
-
-
-*▫️  اسم البوت , كانا*
-*▫️ حط قبل كل امر*  (.)*
-*▫️ اســم الـمطور ابو عبدالله*
-*▫️اليك القائمه يحب*  ${taguser}
-
 🛑تحذير انا اخلي مسؤليتي عن اي اغاني او اباحيات تطلبوها من البوت🛑
-```javascript				•──⊰◈⊱═━❲⚡❳━═⊰◈⊱──•
-	•──⊰◈⊱═━❲⚡❳━═⊰◈⊱──•
+				•──⊰◈⊱═━❲⚡❳━═⊰◈⊱──•
 							⟦الامر ~↡↡↡~⟧
 			   
 						   ☬    #جروب
@@ -96,7 +75,8 @@ let str = `
 			   
 				   ⟦https://wa.me/+201003691617 ⟧
 				•──⊰◈⊱═━❲⚡❳━═⊰◈⊱──•
-conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [m.sender] })
+`
+    conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
 
 }
 handler.help = ['main']
@@ -104,31 +84,26 @@ handler.tags = ['group']
 handler.command = /^(help|الاوامر|menu|أوامر|menu|اوامر)$/i
 
 export default handler
-
 function clockString(ms) {
     let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
     let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
     let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-    return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
-}
+    return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
 
-function ucapan() {
-    const time = moment.tz('Egypt').format('HH')
-    let res = "بداية يوم سعيده ☀️"
-    if (time >= 4) {
+    function ucapan() {
+      const time = moment.tz('Egypt').format('HH')
+      let res = "بداية يوم سعيده ☀️"
+      if (time >= 4) {
         res = "صباح الخير 🌄"
-    }
-    if (time >= 10) {
+      }
+      if (time >= 10) {
         res = "مساء الخير ☀️"
-    }
-    if (time >= 15) {
+      }
+      if (time >= 15) {
         res = "مساء الخير 🌇"
-    }
-    if (time >= 18) {
+      }
+      if (time >= 18) {
         res = "مساء الخير 🌙"
+      }
+      return res
     }
-    return res
-}
-```
-
-لقد قمت بتصحيح استيراد المكتبات والتعريفات المستخدمة في الكود.
