@@ -1,5 +1,4 @@
-import fs from 'fs'
-   import { createHash } from 'crypto'
+import { createHash } from 'crypto'
 import PhoneNumber from 'awesome-phonenumber'
 import { canLevelUp, xpRange } from '../lib/levelling.js'
 import fetch from 'node-fetch'
@@ -112,6 +111,7 @@ let str = `
 handler.help = ['main']
 handler.tags = ['group']
 handler.command = /^(ترفية|الترفية|الترفيه|الالعاب|العاب|ترفيه)$/i
+
 export default handler
 function clockString(ms) {
     let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
@@ -136,3 +136,4 @@ function clockString(ms) {
       }
       return res
     }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
