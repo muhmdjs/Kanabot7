@@ -66,6 +66,6 @@ handler.help = ['ytsearch']
 
 handler.tags = ['dl']
 
-handler.command = ['ytsearch's "يوتيوب"[
+handler.command = ['ytsearch's "يوتيوب"]
 
 export default handler
