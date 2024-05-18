@@ -1,48 +1,71 @@
-const fetch = require('node-fetch');
+import yts from 'yt-search
 
-// يمكنك استبدال هذا بمفتاح API الخاص بك
-const apiKey = 'AIzaSyCvPLrnZFP2hWLY62uLKuMyAGi4rPXwXC4';
+let handler async (m, { conn, text }) = {
 
-// تعريف الدالة للبحث وتنزيل الفيديو
-async function searchAndDownloadVideo(title) {
-    try {
-        // بحث عن الفيديو باستخدام API اليوتيوب
-        const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(title)}&key=${apiKey}`);
-        const data = await response.json();
+if (!text) throw ما الذي تريد البحث عنه على يوتيوب؟
 
-        // الحصول على رابط الفيديو الأول في النتائج
-        const videoId = data.items[0].id.videoId;
-        const videoTitle = data.items[0].snippet.title;
-        const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+let results = await yts(text)
 
-        // إرسال رابط الفيديو في الدردشة أو أي عملية أخرى ترغب فيها
-        console.log(`العنوان: ${videoTitle}`);
-        console.log(`رابط الفيديو: ${videoUrl}`);
+let image results.all
 
-        return videoUrl;
-    } catch (error) {
-        console.error('حدث خطأ أثناء البحث والتنزيل:', error);
-        return null;
-    }
+let img image[].thumbnail
+
+let rows = []
+
+for (let i of results.all) {
+
+switch (i.type) {
+
+case 'video':
+
+const list = {
+
+header: ${text}.trim(),
+
+title: '${i.title}.trim(),
+
+description: المدة: i.timestamp)\nالنشر: i.agon المشاهدات : i.views.trim)(, id:ytmp4 ${i.url}
+
 }
 
-// تحديد الـ handler command
-const handler = {
-    command: /^(mp4|yt|يوتيوب|يوت|فيد|فيديو)$/i,
-    async handle(command, message) {
-        // استخدم الدالة مع العنوان المراد البحث عنه
-        const videoUrl = await searchAndDownloadVideo(message);
+rows.push(list)
 
-        // هنا يمكنك استخدام رابط الفيديو كما تشاء
-        // على سبيل المثال، يمكنك إرساله في الدردشة أو استخدامه بأي طريقة أخرى
-        if (videoUrl) {
-            console.log('تم العثور على الفيديو وتنزيله:', videoUrl);
-            // يمكنك فعل أي شيء آخر تريده هنا مع رابط الفيديو
-        } else {
-            console.log('لم يتم العثور على الفيديو');
-            // يمكنك التعامل مع حالة عدم العثور على الفيديو هنا
-        }
-    },
-};
+}} { { 1
 
-module.exports = handler;
+const sections = [
+
+"name": "single_select",
+
+"buttonParamsJson": {
+
+نتائج البحث" : "title"
+
+"sections": [
+
+"title": "نتائج البحث
+
+"rows": rows
+
+const listMessage = {
+
+image: img,
+
+وأداة البحث على اليوتيوب : title
+
+و الرجاء النقر على القائمة أبناء الرؤينة نتائج البحث text: In
+
+} conn.sendAIButton(m.chat, listMessage, m)
+
+footer: '\n*Copyright© 2824_dark man._,
+
+buttons: sections
+
+}
+
+handler.help = ['ytsearch']
+
+handler.tags = ['dl']
+
+handler.command = ['ytsearch's "يوتيوب"[
+
+export default handler
