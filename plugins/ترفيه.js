@@ -103,6 +103,7 @@ let str = `
 > *▫️يكرهني
 > *▫️جنشن
 > *▫️فزوره
+> *▫️ تخيل 
 
 `
     conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
