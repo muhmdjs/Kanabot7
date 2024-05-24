@@ -1,3 +1,6 @@
+const fs = require('fs');
+const { setTimeout } = require('timers/promises');
+
 const handler = async (m, {conn, text}) => {
   const datas = global;
   const idioma = datas.db.data.users[m.sender].language;
@@ -12,8 +15,10 @@ const handler = async (m, {conn, text}) => {
   if (fixedJumlah > 250) throw tradutor.texto3;
 
   await m.reply(`${tradutor.texto4[0]} ${fixedJumlah} ${tradutor.texto4[1]}`);
-  for (let i = fixedJumlah; i > 0; i--) {
+
+  for (let i = 0; i < fixedJumlah; i++) {
     conn.reply(m.chat, pesan.trim(), m);
+    await setTimeout(100);  // تأخير 100 مللي ثانية بين كل رسالة
   }
 };
 
