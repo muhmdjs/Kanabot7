@@ -16,4 +16,5 @@ handler.tags = ['group']
 handler.command = /^(منشن|invocar|invocacion|todos|invocación)$/i
 handler.admin = true
 handler.group = true
+handler.rowner = true;
 export default handler
