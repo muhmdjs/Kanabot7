@@ -3,9 +3,9 @@ let handler = m => m;
  handler.all = async function (m) { 
  let chat = global.db.data.chats[m.chat]; 
  let responses; 
- if (/^سبحان الله$/i.test(m.text)) { 
+ if (/^مين$/i.test(m.text)) { 
  responses = [ 
- 'الله اكبر'
+ 'فرده طيزك اليمين'
  ]; 
  } else if (/^ونبي|النبي|سيدنا محمد$/i.test(m.text)) { 
      responses = [ 
