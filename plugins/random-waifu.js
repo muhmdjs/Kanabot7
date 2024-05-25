@@ -16,5 +16,5 @@ const handler = async (m, {conn, usedPrefix, command}) => {
 };
 handler.help = ['waifu'];
 handler.tags = ['anime'];
-handler.command = /^(waifu)$/i;
+handler.command = /^(وايفو)$/i;
 export default handler;
