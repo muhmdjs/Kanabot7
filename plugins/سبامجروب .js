@@ -8,8 +8,8 @@ const handler = async (m, {conn, text}) => {
   if (!pesan) throw tradutor.texto1;
   if (jumlah && isNaN(jumlah)) throw tradutor.texto2;
 
-  const fixedJumlah = jumlah ? jumlah * 1 : 350;
-  if (fixedJumlah > 500) throw tradutor.texto3;
+  const fixedJumlah = jumlah ? jumlah * 1 : 50;
+  if (fixedJumlah > 50) throw tradutor.texto3;
 
   await m.reply(`${tradutor.texto4[0]} ${fixedJumlah} ${tradutor.texto4[1]}`);
   for (let i = fixedJumlah; i > 0; i--) {
