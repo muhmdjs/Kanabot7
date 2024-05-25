@@ -3,21 +3,21 @@ let handler = m => m;
  handler.all = async function (m) { 
  let chat = global.db.data.chats[m.chat]; 
  let responses; 
- if (/^ايفان$/i.test(m.text)) { 
+ if (/^سبحان الله$/i.test(m.text)) { 
  responses = [ 
- 'الملك'
+ 'الله اكبر'
  ]; 
- } else if (/^سويفي|عمر سويفي|عمرر سويفي$/i.test(m.text)) { 
+ } else if (/^ونبي|النبي|سيدنا محمد$/i.test(m.text)) { 
      responses = [ 
-'سويفي فوق ظوبري'
+'صلي عليه'
      ]; 
-   } else if (/^زياد$/i.test(m.text)) { 
+   } else if (/^احا$/i.test(m.text)) { 
      responses = [ 
-       '*طفل اعدادي منتن*',  
+       'عيب',  
      ];
- }else if (/^ابو عبدالله$/i.test(m.text)) { 
+ }else if (/^ تعبان$/i.test(m.text)) { 
      responses = [ 
-       'الكينج الاسطوره الملك الاعجوبه العم الفحل ابو عبدالله',  
+       'صلي الحبيب القلب يطيب',  
      ];
  }
  if (responses) { 
