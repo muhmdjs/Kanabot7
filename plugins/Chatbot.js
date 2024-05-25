@@ -3,13 +3,13 @@ let handler = m => m;
  handler.all = async function (m) { 
  let chat = global.db.data.chats[m.chat]; 
  let responses; 
- if (/^اه$/i.test(m.text)) { 
+ if (/^بوت$/i.test(m.text)) { 
  responses = [ 
- 'الشارع الي وراه'
+ 'نعم ياعيوني'
  ]; 
- } else if (/^بوت|كاناتي|كانونه$/i.test(m.text)) { 
+ } else if (/^تست|كاناتي|كانونه$/i.test(m.text)) { 
      responses = [ 
-'موجوده يروحي❤️‍🔥💋'
+'موجوده'
      ]; 
    } else if (/^ااحا$/i.test(m.text)) { 
      responses = [ 
