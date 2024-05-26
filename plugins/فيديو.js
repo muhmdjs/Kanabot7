@@ -32,7 +32,7 @@ const handler = async (m, {command, usedPrefix, conn, text}) => {
       } catch {
         const res = await fetch(`https://api.lolhuman.xyz/api/ytplay?apikey=${lolkeysapi}&query=${yt_play[0].title}`);
         const json = await res.json();
-        await conn.sendFile(m.chat, json.result.video, 'error.mp4', `*『🐉┇b o t a l s o l t a n』\n انا لا اتحمل ذنوب اغانيك او ما تشاهده*`, m);
+        await conn.sendFile(m.chat, json.result.video, 'error.mp4', `*『🐉┇b o t a l  k a n a』\n *انا لا اتحمل ذنوب اغانيك او ما تشاهده*`, m);
       }
     }
   } catch {
