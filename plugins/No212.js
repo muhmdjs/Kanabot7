@@ -18,8 +18,8 @@ let mainHandler = async (m, context) => {
 }
 
 // تصدير المعالج الرئيسي
-handler.help = ['anti212']
-handler.tags = ['tools']
-handler.command = /^(anti212|اي_امر_اخر|anothercommand)$/i
+mainHandler.help = ['anti212']
+mainHandler.tags = ['tools']
+mainHandler.command = /^(anti212|اي_امر_اخر|anothercommand)$/i
 
-export default handler
+export default mainHandler
