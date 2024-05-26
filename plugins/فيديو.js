@@ -25,18 +25,18 @@ const handler = async (m, {command, usedPrefix, conn, text}) => {
       conn.reply(m.chat, `*_⌛جاري التحميل⏳_*`, m);
       try {
         const mediaa = await ytPlayVid(text);
-        const aa_2 = await conn.sendMessage(m.chat, {video: {url: mediaa.result}, fileName: `error.mp4`, caption: `*『b o t a l s o l t a n』\n انا غير مسؤل عن ذنوب اغانيك*`, thumbnail: mediaa.thumb, mimetype: 'video/mp4'}, {quoted: m});
+        const aa_2 = await conn.sendMessage(m.chat, {video: {url: mediaa.result}, fileName: `error.mp4`, caption: `*『b o t a k a n a』*\n *انا غير مسؤل عن ذنوب اغانيك*`, thumbnail: mediaa.thumb, mimetype: 'video/mp4'}, {quoted: m});
         if (!aa_2) {
         throw new Error('*[❗] El primero metodo fallo, intentando otro...*');
        }
       } catch {
         const res = await fetch(`https://api.lolhuman.xyz/api/ytplay?apikey=${lolkeysapi}&query=${yt_play[0].title}`);
         const json = await res.json();
-        await conn.sendFile(m.chat, json.result.video, 'error.mp4', `*『🐉┇b o t a l  k a n a』\n *انا لا اتحمل ذنوب اغانيك او ما تشاهده*`, m);
+        await conn.sendFile(m.chat, json.result.video, 'error.mp4', `*『🐉┇b o t a  k a n a』*\n *انا لا اتحمل ذنوب اغانيك او ما تشاهده*`, m);
       }
     }
   } catch {
-    throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*';
+    throw '*[❗𝐈𝐍𝐅𝐎❗] خطأ,  حاول مره اخرى*';
   }
 };
 handler.help = ['play.1', 'play.2'].map((v) => v + ' <texto>');
