@@ -1,38 +1,6 @@
 {
-  "name": "Rav1IV",
-  "website": "https://github.com/Frosty1V",
-  "description": "اعملي فولو على الانستا",
-  "repository": "https://github.com/Frosty1V/Rav1IV",
-  "logo": "https://github.com/Frosty1V/Rav1IV/master/src/pictures/heroku-icon.jpg",
-  "success_url": "https://github.com/Frosty1V/Rav1IV",
-  "keywords": [
-    "nodejs",
-    "heroku",
-    "bot",
-    "bots",
-    "bot",
-    "spanish",
-    "whatsapp",
-    "termux",
-    "Rav",
-    "multi-device",
-    "md",
-    "whatsappbot",
-    "oficial",
-    "whatsapp-md",
-    "𝓡𝓪𝓿𝓑𝓸𝓽",
-    "𝓡𝓪𝓿𝓑𝓸𝓽",
-    "𝓡𝓪𝓿𝓑𝓸𝓽"],
-  "image": "heroku/nodejs",
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    },
-    {
-      "url": "https://github.com/bogini/heroku-buildpack-graphicsmagick"
-    }    
- ]
-}
+    "name": "TheMystic-Bot-MD",
+    "description": "Un chatbot automatizado para WhatsApp basado en Node.js, que permite realizar múltiples funciones y personalizaciones en la plataforma.",
+    "repository": "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+    "logo": "https://i.ibb.co/Qn1W6cP/image.png"
+  }
